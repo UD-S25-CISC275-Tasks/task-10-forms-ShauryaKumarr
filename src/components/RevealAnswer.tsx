@@ -6,7 +6,11 @@ export function RevealAnswer(): React.JSX.Element {
 
     return (
         <div>
-            <Button onClick={() => setRevealed(!revealed)}>
+            <Button
+                onClick={() => {
+                    setRevealed(!revealed);
+                }}
+            >
                 Reveal Answer
             </Button>
             {revealed && <div>42</div>}
